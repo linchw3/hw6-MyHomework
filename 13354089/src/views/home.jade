@@ -1,0 +1,61 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.col-sm-6.col-md-4.col-md-offset-4
+				#user
+					h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
+						div.signup-wall
+							ul.user-details
+								li Username ---> #{user.username}
+								li Email    ---> #{user.email}
+								li First Name ---> #{user.firstName} 
+								li Last Name ---> #{user.lastName}
+
+table.todo
+    thead
+        tr
+            th Time
+            th Homework
+    tbody    
+        tr         
+            td 2007-11-15
+            td homework1
+        tr.alternate
+            td 2007-12-10
+            td homework2
+        tr
+            td 2007-04-14
+            td homework3
+        tr.alternate
+            td 2007-12-10
+            td homework4
+        tr
+            td 2007-04-14
+            td homework5
+
+table.todo
+    thead
+        tr
+            th Time
+            th My Homework
+    tbody    
+        tr         
+            td 2007-11-15
+            td homework1
+        tr.alternate
+            td 2007-12-10
+            td homework2
+        tr
+            td 2007-04-14
+            td homework3
+        tr.alternate
+            td 2007-12-10
+            td homework4
+        tr
+            td 2007-04-14
+            td homework5
+
+
+a(href='/signout', class='text-center new-account') Sign Out
